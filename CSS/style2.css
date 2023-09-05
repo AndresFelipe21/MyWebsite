@@ -1,0 +1,214 @@
+* {
+    background-color: black;
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffff;
+    padding: 0 1rem;
+    height: 80px;
+}
+
+.nav-links {
+    margin-right: -70px;
+}
+
+.logo a {
+    color: blue;
+    text-decoration: none;
+}
+
+.logo span {
+    color: blue;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav ul li {
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 15px;
+    transition: all ease .4s;
+}
+
+.nav ul li a:hover {
+    color: blue;
+}
+
+.neon-effect {
+    animation: neon 2s linear infinite;
+    display: inline;
+}
+  
+  @keyframes neon {
+    0%, 100% {
+        color: #00f;
+        text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 60px #00f, 0 0 70px #00f;
+      }
+      50% {
+        color: #fff;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+      }
+}
+
+
+/*Main*/
+
+.container{
+    margin-top: 200px;
+}
+
+.glassmorphism {
+    margin-top: -100px;
+    margin-left: 270px;
+    width: 60%;
+    height: 100%;
+    border-top: 2px solid #FFFFFF75;
+    border-left: 2px solid #FFFFFF75;
+    box-shadow: 5px 5px 12px #FFFFFF75;
+    background: #FFFFFF75;
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+}
+
+#foto-col {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+#texto-col {
+    color: white;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+
+h1{
+    margin-left: 20px;
+    color: #fff;
+}
+
+.degrado {
+    background: linear-gradient(to right, white, blue);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+}
+
+
+/*SKILLS*/
+.contenedor {
+    margin-bottom: 150px;
+    margin-top: 30px;
+}
+
+.cuadro {
+    margin-top: 100px;
+    display: inline-block;
+    margin-left: 120px;
+    width: 230px;
+    height: 85px;
+    border-top: 2px solid #FFFFFF75;
+    border-left: 2px solid #FFFFFF75;
+    box-shadow: 5px 5px 12px #FFFFFF75;
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    position: relative;
+}
+
+.icono {
+    margin-top: 5px;
+}
+
+h3 {
+    margin-left: -10px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.texto-oculto {
+    position: absolute;
+    bottom: -30px; 
+    left: 0;
+    opacity: 0; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    color: #fff;
+    margin-left: 50%;
+}
+
+.cuadro:hover .texto-oculto {
+    transform: translateY(-30px); 
+    opacity: 1; 
+}
+
+.menu {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #00f; 
+}
+
+.button {
+    background-color: blue; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo para el botón activo */
+.button.active {
+    background-color: #28a745; /* Color de fondo cuando el botón está activo */
+}
+
+.iconos {
+    margin-top: 7px;
+}
+
+#text-icono {
+    margin-left: -35px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+#foto {
+    margin-left: 6px;
+}
